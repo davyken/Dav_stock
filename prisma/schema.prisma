@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Association {
+  id           String        @id @default(uuid())
+  name         String
+  email        String        @unique
+
+  products     Product[]
+  categories   Category[]
+  transactions Transaction[]
+}
+
+model Product {
+  id             String        @id @default(uuid())
+  name           String
+  description    String
+  price          Float
+  quantity       Int           @default(0)
+  unit           String
+  imageUrl       String
+
+  categoryId     String
+  associationId  String?
+
+  category       Category      @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  association    Association?  @relation(fields: [associationId], references: [id])
+  transactions   Transaction[]
+
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+}
+
+model Category {
+  id             String        @id @default(uuid())
+  name           String
+  description    String?
+
+
+  associationId  String?
+  association    Association?  @relation(fields: [associationId], references: [id])
+  products       Product[]
+}
+
+model Transaction {
+  id             String        @id @default(uuid())
+  type           String
+  quantity       Int
+  productId      String
+  associationId  String?
+
+  product        Product       @relation(fields: [productId], references: [id], onDelete: Cascade)
+  association    Association?  @relation(fields: [associationId], references: [id])
+
+  createdAt      DateTime      @default(now())
+}

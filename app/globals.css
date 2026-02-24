@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes wiggle {
+  0% , 100% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(2deg);
+  }
+}
+
+.wiggle-animation{
+  animation:  wiggle 1.5s  ease-in-out infinite;
+}
+
+
+/* React toastify override */
+
+:root {
+  --toastify-color-light: #ECE3CA;
+  --toastify-text-color-light: #793205;
+}
