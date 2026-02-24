@@ -202,9 +202,26 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-center mb-4">À propos</h2>
             <div className="card bg-base-100 shadow-xl">
               <div className="card-body">
-                <p className="text-lg text-base-content/70">
-                  <strong>DavStock</strong> est une application de gestion de stock conçue spécialement pour les associations.
+                <p className="text-lg text-base-content/70 mb-4">
+                  <strong>DavStock</strong> est une application de gestion de stock conçue spécialement pour les associations. Notre mission est de simplifier la gestion des inventaires pour les organisations à but non lucratif.
                 </p>
+                <p className="text-lg text-base-content/70 mb-4">
+                  Que vous gériez une association caritative, un club sportif, ou toute autre organisation, notre outil vous aide à suivre vos produits, gérer vos donations et garder un œil sur votre stock en toute simplicité.
+                </p>
+                <div className="stats stats-vertical lg:stats-horizontal shadow mt-4">
+                  <div className="stat">
+                    <div className="stat-title">Associations</div>
+                    <div className="stat-value text-primary">500+</div>
+                  </div>
+                  <div className="stat">
+                    <div className="stat-title">Produits suivis</div>
+                    <div className="stat-value text-secondary">50K+</div>
+                  </div>
+                  <div className="stat">
+                    <div className="stat-title">Utilisateurs</div>
+                    <div className="stat-value text-accent">2000+</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -239,7 +256,7 @@ export default function Home() {
               <a href="#about">À propos</a>
               <a href="#contact">Contact</a>
             </div>
-            <p className="text-base-content/40 mt-4">© 2024 DavStock. Tous droits réservés.</p>
+            <p className="text-base-content/40 mt-4">© 2026 DavStock. Tous droits réservés.</p>
           </div>
         </footer>
       </div>
