@@ -28,7 +28,7 @@ export default function Home() {
           <div className="flex-1">
             <Link href="/" className="flex items-center gap-2 px-4">
               <PackagePlus className="w-8 h-8 text-primary" />
-              <span className="font-bold text-xl">AssoStock</span>
+              <span className="font-bold text-xl">DavStock</span>
             </Link>
           </div>
           <div className="flex-none">
@@ -53,7 +53,7 @@ export default function Home() {
                   <PackagePlus className="w-20 h-20 text-primary" />
                 </div>
               </div>
-              <h1 className="text-6xl font-bold text-base-content mb-6">AssoStock</h1>
+              <h1 className="text-6xl font-bold text-base-content mb-6">DavStock</h1>
               <p className="text-2xl text-base-content/70 mb-10 max-w-2xl mx-auto">
                 La solution complète pour gérer le stock de votre association. Simple, efficace et gratuite.
               </p>
@@ -203,7 +203,7 @@ export default function Home() {
             <div className="card bg-base-100 shadow-xl">
               <div className="card-body">
                 <p className="text-lg text-base-content/70">
-                  <strong>AssoStock</strong> est une application de gestion de stock conçue spécialement pour les associations.
+                  <strong>DavStock</strong> est une application de gestion de stock conçue spécialement pour les associations.
                 </p>
               </div>
             </div>
@@ -218,7 +218,7 @@ export default function Home() {
             <div className="card bg-base-100 shadow-xl max-w-md mx-auto">
               <div className="card-body">
                 <p className="text-base-content/70">Pour toute question, contactez-nous:</p>
-                <a href="mailto:contact@assostock.com" className="btn btn-primary mt-4">contact@assostock.com</a>
+                <a href="mailto:contact@DavStock.com" className="btn btn-primary mt-4">contact@DavStock.com</a>
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function Home() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <PackagePlus className="w-8 h-8 text-primary" />
-              <span className="font-bold text-xl">AssoStock</span>
+              <span className="font-bold text-xl">DavStock</span>
             </div>
             <p className="text-base-content/60 max-w-md">
               La solution de gestion de stock pour les associations.
@@ -239,7 +239,7 @@ export default function Home() {
               <a href="#about">À propos</a>
               <a href="#contact">Contact</a>
             </div>
-            <p className="text-base-content/40 mt-4">© 2024 AssoStock. Tous droits réservés.</p>
+            <p className="text-base-content/40 mt-4">© 2024 DavStock. Tous droits réservés.</p>
           </div>
         </footer>
       </div>
